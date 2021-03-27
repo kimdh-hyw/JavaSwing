@@ -6,7 +6,7 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import sec02.addcomponents.EX01_AddComponents_1;
+import sec02.addcomponents.EX02_AddComponents_2;
 
 public class EX01_FlowLayout extends JFrame{
 	

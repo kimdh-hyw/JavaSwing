@@ -6,12 +6,12 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class EX01_AddComponents_1 extends JFrame{
+public class EX02_AddComponents_2 extends JFrame{
 	
-	public EX01_AddComponents_1() {
+	public EX02_AddComponents_2() {
 		//# 기본속성 설정
-		this.setTitle("컴포넌트 추가하기 방법 #1");
-		this.setBounds(100, 100, 300, 200);
+		this.setTitle("컴포넌트 추가 방법 #2");
+		this.setBounds(100, 100, 320, 150);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);	
 		
@@ -28,6 +28,6 @@ public class EX01_AddComponents_1 extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		new EX01_AddComponents_1();
+		new EX02_AddComponents_2();
 	}
 }

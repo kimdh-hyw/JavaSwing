@@ -7,12 +7,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class EX02_AddComponents_2 extends JFrame{
+public class EX03_AddComponents_3 extends JFrame{
 	
-	public EX02_AddComponents_2() {
+	public EX03_AddComponents_3() {
 		//# 기본속성 설정
-		this.setTitle("컴포넌트 추가하기 방법 #2");
-		this.setBounds(100, 100, 300, 200);
+		this.setTitle("컴포넌트 추가 방법 #3");
+		this.setBounds(100, 100, 320, 150);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);	
 		
@@ -31,6 +31,6 @@ public class EX02_AddComponents_2 extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		new EX02_AddComponents_2();
+		new EX03_AddComponents_3();
 	}
 }
