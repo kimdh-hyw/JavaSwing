@@ -16,8 +16,8 @@ import javax.swing.event.ChangeListener;
 
 //JSlider and JProgressBar
 
-public class EX08_uicomp4_withevent extends JFrame {
-	public EX08_uicomp4_withevent() {
+public class EX07_uicomp4_withevent extends JFrame {
+	public EX07_uicomp4_withevent() {
 				
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -76,6 +76,6 @@ public class EX08_uicomp4_withevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX08_uicomp4_withevent();
+		new EX07_uicomp4_withevent();
 	}
 }

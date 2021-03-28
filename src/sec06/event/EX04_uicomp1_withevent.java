@@ -15,8 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
 //JButton and JLabel
-public class EX05_uicomp1_withevent extends JFrame {
-	public EX05_uicomp1_withevent() {
+public class EX04_uicomp1_withevent extends JFrame {
+	public EX04_uicomp1_withevent() {
 		
 		
 		//@Step1. 최상위 컨테이너 가져오기
@@ -55,10 +55,12 @@ public class EX05_uicomp1_withevent extends JFrame {
 		root.add(label4);
 		
 		
+		//===이벤트 처리 추가 부분 Start
+		
 		//event 처리 방법 #1. (익명이너클래스)=======================
 		//이벤트 @1.첫번째 버튼을 누르면 첫번째 Label의 텍스트를 ABCDE로 변경
-		//이벤트 @2.두번째 버튼을 누르면 두번째 Label 배경식 변경
-		/*
+		//이벤트 @2.두번째 버튼을 누르면 두번째 Label 배경색 변경
+	
 		btn1.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -72,8 +74,8 @@ public class EX05_uicomp1_withevent extends JFrame {
 				label2.setBackground(Color.RED);				
 			}
 		});
-		*/
-		
+	
+		/*
 		//event 처리 방법 #2. (별도의 클래스 생성)=======================
 		//이벤트 @1.첫번째 버튼을 누르면 첫번째 Label의 텍스트를 ABCDE로 변경
 		//이벤트 @2.두번째 버튼을 누르면 두번째 Label 배경식 변경
@@ -93,7 +95,9 @@ public class EX05_uicomp1_withevent extends JFrame {
 		btn1.addActionListener(new MyBtnHandler());
 		btn2.addActionListener(new MyBtnHandler());
 		//========================================================
+		*/
 		
+		//===이벤트 처리 추가 부분 End
 				
 		//# 기본속성 설정
 		this.setTitle("UICompoents(JButton and JLabel)");
@@ -105,6 +109,6 @@ public class EX05_uicomp1_withevent extends JFrame {
 	
 	
 	public static void main(String[] args) {
-		new EX05_uicomp1_withevent();
+		new EX04_uicomp1_withevent();
 	}
 }

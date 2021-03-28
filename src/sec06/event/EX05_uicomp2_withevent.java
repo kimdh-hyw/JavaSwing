@@ -15,8 +15,8 @@ import javax.swing.event.CaretListener;
 
 //JTextField and JTextArea
 
-public class EX06_uicomp2_withevent extends JFrame {
-	public EX06_uicomp2_withevent() {
+public class EX05_uicomp2_withevent extends JFrame {
+	public EX05_uicomp2_withevent() {
 				
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -49,6 +49,8 @@ public class EX06_uicomp2_withevent extends JFrame {
 		root.add(ta3);
 		root.add(sp);
 		
+		//===이벤트 처리 추가 부분 Start
+				
 		//event 처리. (익명이너클래스)=======================		
 		//이벤트 @1.TextField3에 문자열을 입력하면 TextField4에 글자수가 출력		
 		tf3.addCaretListener(new CaretListener() {			
@@ -66,6 +68,9 @@ public class EX06_uicomp2_withevent extends JFrame {
 		});
 		//=====================================================
 		
+		//===이벤트 처리 추가 부분 End
+		
+		
 		//# 기본속성 설정
 		this.setTitle("UICompoents(JTextField and JTextArea)");
 		this.setBounds(100, 100, 480, 180);
@@ -74,6 +79,6 @@ public class EX06_uicomp2_withevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX06_uicomp2_withevent();
+		new EX05_uicomp2_withevent();
 	}
 }

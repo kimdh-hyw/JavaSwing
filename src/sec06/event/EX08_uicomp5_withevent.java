@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.util.Arrays;
 import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
@@ -21,8 +22,8 @@ import javax.swing.event.ListSelectionListener;
 
 //JComboBox and JList
 
-public class EX09_uicomp5_withevent extends JFrame {
-	public EX09_uicomp5_withevent() {
+public class EX08_uicomp5_withevent extends JFrame {
+	public EX08_uicomp5_withevent() {
 				
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -112,7 +113,7 @@ public class EX09_uicomp5_withevent extends JFrame {
 		//이벤트 @1. 첫번째 cb1에서 JComboBox11항목이 선택되면 list2의 테두리색을 빨간색, JComboBox13 항목을 선택하면 list2의 테두리 색을 파란색으로 변경	
 		cb1.addItemListener(new ItemListener() {
 			@Override
-			public void itemStateChanged(ItemEvent e) {
+			public void itemStateChanged(ItemEvent e) { 
 				//Item선택이 바뀐 경우 두번 (이전값, 새로운값) 호출
 				if(e.getStateChange()==ItemEvent.DESELECTED) { //이전 값
 					//System.out.println("Deselected:" + e.getItem()); 
@@ -130,10 +131,11 @@ public class EX09_uicomp5_withevent extends JFrame {
 		list1.addListSelectionListener(new ListSelectionListener() {			
 			@Override
 			public void valueChanged(ListSelectionEvent e) {				
-				System.out.println(e.getValueIsAdjusting()); //선택변경시 두번 호출 true, false 새로운 선택값은 true일 한번만 처리
+				//System.out.println(e.getValueIsAdjusting()); //선택변경시 두번 호출 true, false 새로운 선택값은 true일때 한번만 처리
 				if(e.getValueIsAdjusting()) {
 					int[] selectedItems = list1.getSelectedIndices(); //선택된 다중 데이터의 인덱스 배열
 					list2.setSelectedIndices(selectedItems);
+					//System.out.println(Arrays.toString(selectedItems));
 				}
 			}
 		});
@@ -148,6 +150,6 @@ public class EX09_uicomp5_withevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX09_uicomp5_withevent();
+		new EX08_uicomp5_withevent();
 	}
 }

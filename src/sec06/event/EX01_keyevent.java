@@ -63,6 +63,8 @@ public class EX01_keyevent extends JFrame {
 		//=========================================================
 		*/	
 		
+		
+		
 		//KeyAdapter 객체 생성 후 필요한 추상메서드 오버라이드
 		root.addKeyListener(new KeyAdapter() {
 			@Override

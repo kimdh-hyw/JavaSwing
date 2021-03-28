@@ -18,8 +18,8 @@ import javafx.scene.control.CheckBox;
 
 //JCheckBox and JRadioButton
 
-public class EX07_uicomp3_withevent extends JFrame {
-	public EX07_uicomp3_withevent() {
+public class EX06_uicomp3_withevent extends JFrame {
+	public EX06_uicomp3_withevent() {
 				
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -95,7 +95,7 @@ public class EX07_uicomp3_withevent extends JFrame {
 //		
 		//event 처리. ==================================		
 		//이벤트 @1.첫번째 cb1이 선택되면 cb3는 빨간색 해제하면 다시 검은색으로 변경
-		//		   두번째 cb2가 선택되면 cb4는 빨간색 해재되면 다시 검은색으로 변경		
+		//		   두번째 cb2가 선택되면 cb4는 빨간색 해제되면 다시 검은색으로 변경		
 		cb4.setForeground(Color.RED);//초기값이 선택이기 때문에
 		class MyCheckBoxHandler implements ActionListener{ //Check 박스는ItemListener로도 동일한 결과		
 			@Override
@@ -140,29 +140,6 @@ public class EX07_uicomp3_withevent extends JFrame {
 			
 		
 		
-//		
-//		cb1.addItemListener(new ItemListener() {			
-//			@Override
-//			public void itemStateChanged(ItemEvent e) {
-//				System.out.println("...");
-//				JCheckBox cb = (JCheckBox)e.getSource();
-//				if(cb==cb1) {
-//					if(cb.isSelected())
-//						cb3.setForeground(Color.RED);
-//					else
-//						cb3.setForeground(Color.BLACK);
-//				}
-//				else {
-//					if(cb.isSelected())
-//						cb4.setForeground(Color.RED);
-//					else
-//						cb4.setForeground(Color.BLACK);
-//				}
-//			}
-//		});
-		
-	
-		
 		//# 기본속성 설정
 		this.setTitle("UICompoents(JCheckBox and JRadioButton)");
 		this.setBounds(100, 100, 650, 180);
@@ -171,6 +148,6 @@ public class EX07_uicomp3_withevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX07_uicomp3_withevent();
+		new EX06_uicomp3_withevent();
 	}
 }

@@ -111,7 +111,7 @@ public class EX02_mouseevent extends JFrame {
 			}
 		});
 		
-		// MouseMotionAdapter 객체 생성  + 필요한  추상메서드 구현 + 등록
+		// MouseWheelListener 객체 생성  + 추상메서드 구현 + 등록
 		root.addMouseWheelListener(new MouseWheelListener() {
 			
 			@Override

@@ -13,8 +13,8 @@ import javax.swing.JTextArea;
 
 //JComponent and JWindowEvent
 
-public class EX04_windowevent extends JFrame {
-	public EX04_windowevent() {
+public class EX10_windowevent extends JFrame {
+	public EX10_windowevent() {
 		
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -63,8 +63,7 @@ public class EX04_windowevent extends JFrame {
 				ta.append("JFrame: windowActivated\n");
 			}
 		});
-		
-		
+				
 		JDialog dialog = new JDialog();
 		dialog.setTitle("WindowEvent");
 		dialog.setSize(200, 200);
@@ -92,6 +91,6 @@ public class EX04_windowevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX04_windowevent();
+		new EX10_windowevent();
 	}
 }

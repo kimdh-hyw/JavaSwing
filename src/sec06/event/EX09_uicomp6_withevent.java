@@ -18,8 +18,8 @@ import javax.swing.JToolBar;
 
 //JMenuBar, JMenu, JMenuItem + JToolBar
 
-public class EX10_uicomp6_withevent extends JFrame {
-	public EX10_uicomp6_withevent() {
+public class EX09_uicomp6_withevent extends JFrame {
+	public EX09_uicomp6_withevent() {
 				
 		//@Step1. 최상위 컨테이너 가져오기
 		Container root = this.getContentPane();
@@ -79,10 +79,8 @@ public class EX10_uicomp6_withevent extends JFrame {
 				}
 				else if(e.getSource()==item13) {
 					System.exit(0);
-				}
-				
-			}
-			
+				}				
+			}			
 		}
 		item11.addActionListener(new MyMenuHandler());
 		item12.addActionListener(new MyMenuHandler());
@@ -97,6 +95,6 @@ public class EX10_uicomp6_withevent extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new EX10_uicomp6_withevent();
+		new EX09_uicomp6_withevent();
 	}
 }

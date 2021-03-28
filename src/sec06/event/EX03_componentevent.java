@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.WindowAdapter;
@@ -27,6 +28,8 @@ public class EX03_componentevent extends JFrame {
 		JLabel label = new JLabel("Hello", JLabel.HORIZONTAL);
 		root.add(label);
 		
+		/*
+		//방법1. ComponentListener 객체생성 + 모든 추상메서드 구현 + 등록
 		root.addComponentListener(new ComponentListener() {			
 			@Override
 			public void componentShown(ComponentEvent e) {
@@ -47,10 +50,20 @@ public class EX03_componentevent extends JFrame {
 				System.out.println("componentHidden");
 			}
 		});
-						
+		*/
+		//방법2. ComponentAdpater 객체생성 + 필요 추상메서드 구현 + 등록
+		root.addComponentListener(new ComponentAdapter() {
+			@Override
+			public void componentResized(ComponentEvent e) {
+				//가로폭에 따라 텍스트 크기 변경
+				int fontSize = e.getComponent().getWidth()/10;
+				label.setFont(new Font(null, Font.BOLD, fontSize));				
+			}		
+		});
+								
 		//# 기본속성 설정
 		this.setTitle("Event(ComponentEvent)");
-		this.setBounds(100, 100, 600, 220);
+		this.setBounds(100, 100, 200, 150);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);	
 	}
