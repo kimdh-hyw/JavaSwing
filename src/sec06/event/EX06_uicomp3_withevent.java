@@ -14,8 +14,6 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
-import javafx.scene.control.CheckBox;
-
 //JCheckBox and JRadioButton
 
 public class EX06_uicomp3_withevent extends JFrame {

@@ -1,4 +1,4 @@
- package sec07.usingwindowbuilder;
+package sec07.usingwindowbuilder;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -46,7 +46,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public class EX01_uicomp_usingwb extends JFrame {
+public class EX13_uicomp_usingwb_3 extends JFrame {
 
 	private JPanel contentPane;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
@@ -59,7 +59,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					EX01_uicomp_usingwb frame = new EX01_uicomp_usingwb();
+					EX13_uicomp_usingwb_3 frame = new EX13_uicomp_usingwb_3();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -71,10 +71,10 @@ public class EX01_uicomp_usingwb extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public EX01_uicomp_usingwb() {
+	public EX13_uicomp_usingwb_3() {
 		setTitle("Swing using Window Builder");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 627, 599);
+		setBounds(100, 100, 627, 546);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -87,7 +87,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 		JPanel panel_1_3_1 = new JPanel();
 		panel_1_3_1.setLayout(null);
 		panel_1_3_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "JFileChooser & JColorChooser", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1_3_1.setBounds(13, 365, 566, 59);
+		panel_1_3_1.setBounds(12, 342, 566, 59);
 		panel.add(panel_1_3_1);
 		
 				
@@ -127,7 +127,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 		JPanel panel_1_2 = new JPanel();
 		panel_1_2.setLayout(null);
 		panel_1_2.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "JComboBox & JList", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1_2.setBounds(420, 143, 162, 212);
+		panel_1_2.setBounds(365, 143, 217, 181);
 		panel.add(panel_1_2);
 		
 		JComboBox comboBox = new JComboBox();
@@ -138,11 +138,11 @@ public class EX01_uicomp_usingwb extends JFrame {
 			}
 		});
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"ComboBox Item1", "ComboBox Item2", "ComboBox Item3", "ComboBox Item4", "ComboBox Item5"}));
-		comboBox.setBounds(15, 24, 123, 21);
+		comboBox.setBounds(30, 24, 163, 21);
 		panel_1_2.add(comboBox);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBounds(15, 55, 123, 147);
+		scrollPane_1.setBounds(30, 55, 163, 106);
 		panel_1_2.add(scrollPane_1);
 		
 		JList list = new JList();
@@ -168,7 +168,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 		
 		JPanel panel_1_3 = new JPanel();
 		panel_1_3.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "JOptionPane Dialog", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1_3.setBounds(13, 219, 132, 136);
+		panel_1_3.setBounds(13, 266, 341, 59);
 		panel.add(panel_1_3);
 		panel_1_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
@@ -201,7 +201,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setLayout(null);
 		panel_1_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "JTextField & JTextArea", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1_1.setBounds(164, 143, 252, 212);
+		panel_1_1.setBounds(157, 143, 196, 108);
 		panel.add(panel_1_1);
 		
 		JTextField textField = new JTextField();
@@ -215,11 +215,11 @@ public class EX01_uicomp_usingwb extends JFrame {
 			}
 		});
 		textField.setColumns(10);
-		textField.setBounds(12, 22, 226, 21);
+		textField.setBounds(12, 22, 172, 21);
 		panel_1_1.add(textField);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(12, 52, 226, 150);
+		scrollPane.setBounds(12, 52, 172, 45);
 		panel_1_1.add(scrollPane);
 		
 		textArea = new JTextArea();
@@ -228,12 +228,12 @@ public class EX01_uicomp_usingwb extends JFrame {
 		JPanel panel_1 = new JPanel();
 		panel_1.setLayout(null);
 		panel_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "JButton & JLabel", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1.setBounds(12, 143, 134, 73);
+		panel_1.setBounds(12, 143, 134, 108);
 		panel.add(panel_1);
 				
 		JLabel lbl_result = new JLabel("Result");
 		lbl_result.setHorizontalAlignment(SwingConstants.CENTER);
-		lbl_result.setBounds(37, 50, 57, 15);
+		lbl_result.setBounds(37, 72, 57, 15);
 		panel_1.add(lbl_result);
 		
 		JButton btn_ok = new JButton("OK");
@@ -242,7 +242,7 @@ public class EX01_uicomp_usingwb extends JFrame {
 				lbl_result.setText("Clicked!");
 			}
 		});
-		btn_ok.setBounds(20, 20, 97, 23);
+		btn_ok.setBounds(18, 32, 97, 23);
 		panel_1.add(btn_ok);
 		
 		JPanel panel_2 = new JPanel();
