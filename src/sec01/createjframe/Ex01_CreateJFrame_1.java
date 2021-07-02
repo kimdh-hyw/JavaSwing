@@ -3,28 +3,28 @@ package sec01.createjframe;
 import javax.swing.JFrame;
 
 
-public class Ex01_CreateJFrame_1 extends JFrame {
+public class Ex01_CreateJFrame_1 {
 	
 	public static void main(String[] args) {
 		
-		//#1. JFrame °´Ã¼ »ı¼º
+		//#1. JFrame ê°ì²´ ìƒì„±
 		JFrame jf = new JFrame();
 		
-		//#2. JFrame ¼³Á¤ (Å¸ÀÌÆ², Å©±â, x ¹öÆ° µ¿ÀÛ, º¸ÀÌ±â »óÅÂ)
-		jf.setTitle("JFrame »ı¼ºÇÏ±â ¹æ¹ı#1");
+		//#2. JFrame ì„¤ì • (íƒ€ì´í‹€, í¬ê¸°, x ë²„íŠ¼ ë™ì‘, ë³´ì´ê¸° ìƒíƒœ)
+		jf.setTitle("JFrame ìƒì„±í•˜ê¸° ë°©ë²•#1");
 		jf.setBounds(100, 100, 350, 200);
-		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //ÇÁ·Î±×·¥ Á¾·á
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //í”„ë¡œê·¸ë¨ ì¢…ë£Œ
 		jf.setVisible(true);
-		//jf.setLocationRelativeTo(null);//È­¸é°¡¿îµ¥ ¹èÄ¡
+		//jf.setLocationRelativeTo(null);//í™”ë©´ê°€ìš´ë° ë°°ì¹˜
 						
-		/* ¿©·¯ °³ÀÇ ÇÁ·¹ÀÓ »ı¼º °¡´É 		
-		//#3. JFrame °´Ã¼ »ı¼º
+		/* ì—¬ëŸ¬ ê°œì˜ í”„ë ˆì„ ìƒì„± ê°€ëŠ¥ 		
+		//#3. JFrame ê°ì²´ ìƒì„±
 		JFrame jf2 = new JFrame();
 		
-		//#4. JFrame ¼³Á¤ (Å¸ÀÌÆ², Å©±â, x ¹öÆ° µ¿ÀÛ, º¸ÀÌ±â »óÅÂ)
-		jf2.setTitle("JFrame »ı¼ºÇÏ±â ¹æ¹ı#1");
+		//#4. JFrame ì„¤ì • (íƒ€ì´í‹€, í¬ê¸°, x ë²„íŠ¼ ë™ì‘, ë³´ì´ê¸° ìƒíƒœ)
+		jf2.setTitle("JFrame ìƒì„±í•˜ê¸° ë°©ë²•#1");
 		jf2.setBounds(100, 100, 350, 200);
-		jf2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); //ÀÚ½ÅÀÇ ÇÁ·¹ÀÓ¸¸ Á¾·á
+		jf2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); //ìì‹ ì˜ í”„ë ˆì„ë§Œ ì¢…ë£Œ
 		jf2.setVisible(true);
 		*/
 						
