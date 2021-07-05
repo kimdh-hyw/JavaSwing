@@ -19,27 +19,27 @@ import javax.swing.border.LineBorder;
 public class EX05_uicomponents5 extends JFrame {
 	public EX05_uicomponents5() {
 				
-		//@Step1. ÃÖ»óÀ§ ÄÁÅ×ÀÌ³Ê °¡Á®¿À±â
+		//@Step1. ìµœìƒìœ„ ì»¨í…Œì´ë„ˆ ê°€ì ¸ì˜¤ê¸°
 		Container root = this.getContentPane();
-		//@Step2. ·¹ÀÌ¾Æ¿ô ¼³Á¤
+		//@Step2. ë ˆì´ì•„ì›ƒ ì„¤ì •
 		root.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 20));
-		//@Step3. ÄÄÆÛ³ÍÆ® Ãß°¡ÇÏ±â
+		//@Step3. ì»´í¼ë„ŒíŠ¸ ì¶”ê°€í•˜ê¸°
 		
 		//JComboBox
-		JComboBox cb1 = new JComboBox(); //±âº» ComboBox + addItemÀ¸·Î Ãß°¡ + removeItemÀ¸·Î »èÁ¦ (//ÀüÃ¼ µ¥ÀÌÅÍ »èÁ¦)
+		JComboBox cb1 = new JComboBox(); //ê¸°ë³¸ ComboBox + addItemìœ¼ë¡œ ì¶”ê°€ + removeItemìœ¼ë¡œ ì‚­ì œ (//ì „ì²´ ë°ì´í„° ì‚­ì œ)
 		cb1.addItem("JComboBox 11");
 		cb1.addItem("JComboBox 12");
 		cb1.addItem("JComboBox 13");
 		
 		cb1.removeItem("JComboBox 12");		
-		//cb1.removeAllItems(); ÀüÃ¼ »èÁ¦
+		//cb1.removeAllItems(); ì „ì²´ ì‚­ì œ
 		
 		String[] arrayItems = {"JComboBox 21", "JComboBox 22", "JComboBox 23"};
-		JComboBox cb2 = new JComboBox(arrayItems); //¹è¿­À» µ¥ÀÌÅÍ·Î °¡Áö´Â ComboBox + µ¥ÀÌÅÍ Ãß°¡ (µÚ¿¡¸¸ Ãß°¡ °¡´É)
+		JComboBox cb2 = new JComboBox(arrayItems); //ë°°ì—´ì„ ë°ì´í„°ë¡œ ê°€ì§€ëŠ” ComboBox + ë°ì´í„° ì¶”ê°€ (ë’¤ì—ë§Œ ì¶”ê°€ ê°€ëŠ¥)
 		cb2.addItem("JComboBox 24");
 		
 		Vector<String> vectorItems1 = new Vector<>();		
-		JComboBox cb3 = new JComboBox(vectorItems1); //Vector<>¸¦ µ¥ÀÌÅÍ·Î °¡Áö´Â ComboBox + µ¥ÀÌÅÍ ÀÓÀÇ Ãß°¡ ¹× »èÁ¦ (µ¥ÀÌÅÍ Vector<>¸¦ º¯°æ) + ¼±ÅÃÀ§Ä¡º¯°æ
+		JComboBox cb3 = new JComboBox(vectorItems1); //Vector<>ë¥¼ ë°ì´í„°ë¡œ ê°€ì§€ëŠ” ComboBox + ë°ì´í„° ì„ì˜ ì¶”ê°€ ë° ì‚­ì œ (ë°ì´í„° Vector<>ë¥¼ ë³€ê²½) + ì„ íƒìœ„ì¹˜ë³€ê²½
 		vectorItems1.add("JComboBox 31");
 		vectorItems1.add("JComboBox 32");
 		vectorItems1.add(1,"JComboBox 33");
@@ -55,7 +55,7 @@ public class EX05_uicomponents5 extends JFrame {
 		
 		//JList
 		
-		JList list1 = new JList(); //±âº» List JList¿¡´Â addItem()ÀÌ ¾ø¾î //ÀÌ °æ¿ì µ¥ÀÌÅÍ Ãß°¡ »èÁ¦ ¾ÈµÊ
+		JList list1 = new JList(); //ê¸°ë³¸ List JListì—ëŠ” addItem()ì´ ì—†ì–´ //ì´ ê²½ìš° ë°ì´í„° ì¶”ê°€ ì‚­ì œ ì•ˆë¨
 		String[] strs1 = {"JList 11", "JList 12", "JList 13", "JList 14"};
 		list1.setListData(strs1);
 		
@@ -74,7 +74,7 @@ public class EX05_uicomponents5 extends JFrame {
 		vectorItems2.add("JList 35");
 		list3.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		
-		DefaultListModel<String> listmodel = new DefaultListModel<>(); //Model °´Ã¼·Î µ¥ÀÌÅÍ ÀÔ·Â + ´ÜÀÏÇ×¸ñ ¼±ÅÃ
+		DefaultListModel<String> listmodel = new DefaultListModel<>(); //Model ê°ì²´ë¡œ ë°ì´í„° ì…ë ¥ + ë‹¨ì¼í•­ëª© ì„ íƒ
 		JList list4 = new JList(listmodel);
 		listmodel.addElement("JList 41");
 		listmodel.addElement("JList 42");
@@ -84,11 +84,11 @@ public class EX05_uicomponents5 extends JFrame {
 		listmodel.addElement("JList 45");
 		list4.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 				
-		Vector<String> vectorItems3 = new Vector<>(); //Scroll±â´É Æ÷ÇÔ+ Å©±âÁöÁ¤
+		Vector<String> vectorItems3 = new Vector<>(); //Scrollê¸°ëŠ¥ í¬í•¨+ í¬ê¸°ì§€ì •
 		JList list5 = new JList(vectorItems3);
 		JScrollPane sp = new JScrollPane(list5);		
 		sp.setPreferredSize(new Dimension(70, 100));
-		list4.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+		list5.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 		for(int i=0; i<10; i++)
 			vectorItems3.add("JList 5"+i);
 						
@@ -103,7 +103,7 @@ public class EX05_uicomponents5 extends JFrame {
 		root.add(list4);
 		root.add(sp);
 		
-		//# ±âº»¼Ó¼º ¼³Á¤
+		//# ê¸°ë³¸ì†ì„± ì„¤ì •
 		this.setTitle("UICompoents(JComboBox and JList)");
 		this.setBounds(100, 100, 600, 220);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
